@@ -9,8 +9,8 @@
 <body>
     <header>
         <div class="logo-container">
-            <img src="logo.png" alt="Site Logo" id="logo">
-            <h1><a class="a1" href="index.html" onClick="activeHome()" id="home">Sitename</a></h1>
+            <img src="rk_logo.jpg" alt="Site Logo" id="logo">
+            <h1><a class="a1" href="index.html" onClick="activeHome()" id="home">RK Group</a></h1>
         </div>
         <nav>
             <a class="a2" href="contact.html" onClick="activeContact()" id="contact">Contact</a>
@@ -19,8 +19,47 @@
     
     <main>
         <form>
+            <table>
+                <tr>
+                    <th>Name:</th>
+                    <td><input type="text" id="name" name="name" class="full-width"></td>
+                </tr>
+                <tr>
+                    <th>Email:</th>
+                    <td><input type="email" id="email" name="email" class="full-width"></td>
+                </tr>
+                <tr>
+                    <th>Favourite Genre:</th>
+                    <td>
+                        <input type="text" id="genre" name="genre" list="genres" class="full-width">
+                        <datalist id="genres">
+                            <option value="html">
+                            <option value="css">
+                            <option value="javascript">
+                            <option value="react">
+                        </datalist>
+                        <p>List input (visit the link for more info on how to create list type input)</p>
+                        <a href="https://www.w3schools.com/tags/att_input_list.asp">https://www.w3schools.com/tags/att_input_list.asp</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <label>
+                            <input type="checkbox" id="newsletter" name="newsletter"> Subscribe to our newsletter via email
+                        </label>
+                    </th>
+                </tr>
+                <tr>
+                    <td colspan="2" class="submit-cell">
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <!--
+        <form>
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name"><br>
+            <input type="text" id="name" name="name"> <br>
 
             <label for="email">Email:</label>
             <input type="email" id="email" name="email"><br>
@@ -41,6 +80,7 @@
             
             <input type="submit" value="Submit">
         </form>
+    -->
     </main>
     
     <footer>

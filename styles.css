@@ -67,12 +67,19 @@ main {
 .content-block {
     width: 45%;
     text-align: center;
+    
+}
+.content-block img {
+    height: 100%;
+    width:100%;
 }
 
 .content-block div {
     margin: 20px 0;
-    padding: 20px;
+    
+    padding: 10px;
     border: 2px solid black;
+    
 }
 
 #video iframe {
@@ -86,4 +93,37 @@ footer {
     padding: 10px 0;
     font-size: 12px;
     border: 2px solid black;
+}
+form {
+    margin: 20px 0;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    
+    padding: 10px;
+    text-align: left;
+}
+
+.full-width {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.submit-cell {
+    text-align: center;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    font-weight: bold;
+    border: 2px solid black;
+    cursor: pointer;
 }
